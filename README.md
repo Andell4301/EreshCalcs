@@ -444,7 +444,7 @@ You should not use this argument unless you are testing an extra card.
 - `!calc Ereshkigal footprint475`
 
 **Usage:**
-Adds extra attack from Beast's Footprints.
+Adds extra attack stat from Beast's Footprints.
 </details>
 
 ### Refund Arguments:
