@@ -44,6 +44,10 @@ The bot had to make some assumptions to fill in the rest. By default, unless you
 In addition to the assumptions, Eresh will also automatically include:
 - Your servant's passives (for example, Ereshkigal has 11% arts up and 225 damage plus. The arts up won't affect her NP as it is buster, but the 225 damage plus will).
 - All of your servant's internal stats, such as their innate ATK stat, their class multiplier, etc.
+  
+Finally, if the servant is available in NA, Eresh will automatically default to the highest available strengthening for the NP in NA. If the servant is not in NA yet, it will default to the highest available strengthening in JP.
+  
+Note that all of these automatic inclusions / assumptions can be changed via the arguments you will see in the arguments list at the bottom of this page.
 
 It does **not**, however, include things like Class Affinity or Attribute Affinity by default, as it does not know what type of enemy you are up against. So, for example, if you calculate with a berserker, be sure to include the class you are fighting against, otherwise the result returned would assume you get no class advantage, when in reality a berserker will probably be getting 1.5x class advantage.
 
