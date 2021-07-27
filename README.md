@@ -13,10 +13,24 @@ Now, say you wanted to calculate how much damage Ereshkigal's Noble Phantasm wou
 `!calc Ereshkigal attack30 npmod20`
 
 The arguments following Ereshkigal can be in any order, and you can also repeat. You must, however, begin with `!calc NameOfServant`.
-If you were to do `!calc Ereshkigal attack30 npmod20 npmod20`, Eresh would interpret that as `!calc Ereshkigal attack30 npmod40`, adding the two 20's together.
+If you were to do `!calc Ereshkigal attack30 npmod10 npmod10`, Eresh would interpret that as `!calc Ereshkigal attack30 npmod20`, adding the two 10's together.
 
 <img src="https://user-images.githubusercontent.com/56235026/126912862-959d81f6-f008-4ec9-b2f8-72acb647d7bd.png" width="400">
 
+Note that unlike most other commands with Eresh bot, the calculation command **cannot** accept spaces in servant names. So if you want to calculate Sei Shonagon's NP damage, you could either use an alias like `!calc sei`, put their name in quotation marks `!calc "sei shonagon"`, or squish the name together like `!calc seishonagon`).
+</details>
+
+
+<details>
+  <summary><b>Part 2: What's Included By Default?</b></summary>
+  
+  Consider the example from the previous section:
+  
+  `!calc Ereshkigal attack30 npmod20`
+  
+  <img src="https://user-images.githubusercontent.com/56235026/126912862-959d81f6-f008-4ec9-b2f8-72acb647d7bd.png" width="400">
+  
+  
 Since all we provided in our sample was:
 - The name of the servant (Ereshkigal)
 - 30% <img src="https://assets.atlasacademy.io/GameData/JP/BuffIcons/bufficon_300.png" alt="ATK Up" width="15" height="15"> Attack Up
@@ -28,7 +42,7 @@ The bot had to make some assumptions to fill in the rest. By default, unless you
 - Your servant is NP5
 
 In addition to the assumptions, Eresh will also automatically include:
-- Your servant's passives
+- Your servant's passives (for example, Ereshkigal has 11% arts up and 225 damage plus. The arts up won't affect her NP as it is buster, but the 225 damage plus will).
 - All of your servant's internal stats, such as their innate ATK stat, their class multiplier, etc.
 
 It does **not**, however, include things like Class Affinity or Attribute Affinity by default, as it does not know what type of enemy you are up against. So, for example, if you calculate with a berserker, be sure to include the class you are fighting against, otherwise the result returned would assume you get no class advantage, when in reality a berserker will probably be getting 1.5x class advantage.
@@ -39,12 +53,11 @@ There is a bit of random chance involved in the FGO Damage Formula to ensure tha
 - The average damage you can deal (in this case, **32,275**)
 - The minimum damage you can deal (in this case, **29,070**)
 - The maximum damage you can deal (in this case, **35,448**)
-
-Note that unlike most other commands with Eresh bot, the calculation command **cannot** accept spaces in servant names. So if you want to calculate Sei Shonagon's NP damage, you could either use an alias like `!calc sei`, put their name in quotation marks `!calc "sei shonagon"`, or squish the name together like `!calc seishonagon`).
+  
 </details>
 
 <details>
-  <summary><b>Part 2: Card Calculations</b></summary>
+  <summary><b>Part 3: Card Calculations</b></summary>
 
 In addition to calculating noble phantasm damage, you can also calculate the damage of cards themselves.
 For these, you will include one additional argument between the servant's name and your buffs etc. that indicates what card type you wish to test.
@@ -57,7 +70,7 @@ So, say you wanted to test how much damage Ereshkigal's quick card would deal wi
 </details>
 
 <details>
-  <summary><b>Part 3: What About CEs?</b></summary>
+  <summary><b>Part 4: What About CEs?</b></summary>
 
 Including Craft Essences in calculations is very simple. You only need to treat their effects as buffs the same as any other buffs. So if you want to use, say, an MLB black grail, just add `npmod80` for the 80% <img src="https://assets.atlasacademy.io/GameData/JP/BuffIcons/bufficon_310.png" alt="NP Dmg Up" width="15" height="15"> NP Damage Up just like we did for the 20% <img src="https://assets.atlasacademy.io/GameData/JP/BuffIcons/bufficon_310.png" alt="NP Dmg Up" width="15" height="15"> NP Damage Up earlier.
 
@@ -72,7 +85,7 @@ So, lets take our calculation from earlier (`!calc Ereshkigal attack30 npmod20`)
 </details>
 
 <details>
-  <summary><b>Part 4: Calculating NP Refund</b></summary>
+  <summary><b>Part 5: Calculating NP Refund</b></summary>
 
 Calculating damage is great, but what about calculating the amount of NP you'll generate from your attack or noble phantasm? This is important to know for looping, like with Skadi or Caster Artoria, and Eresh will let you calculate this as well.
 
