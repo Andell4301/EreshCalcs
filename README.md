@@ -434,6 +434,19 @@ This value is: 2 if the Extra card in a Brave Chain and 3.5 if Extra card in a B
 You should not use this argument unless you are testing an extra card.
 </details>
 
+<details>
+  <summary><b>paw/foupaw/print/footprint</b></summary>
+
+**Examples:**
+- `!calc Ereshkigal paw500`
+- `!calc Ereshkigal print100`
+- `!calc Ereshkigal print250`
+- `!calc Ereshkigal footprint475`
+
+**Usage:**
+Adds extra attack from Beast's Footprints.
+</details>
+
 ### Refund Arguments:
 
 <details>
@@ -491,6 +504,16 @@ Sets a custom enemy server rate which impacts how much NP you generate. If you s
 
 **Usage:**
 Used to manually apply the arts first bonus, which is an NP generation bonus all of your Non-NP cards get if the first card in your attack sequence is arts. So, if you are trying to calculate a quick card, but intend to use that card in a arts-quick-quick chain for instance, you would want to apply the arts first bonus to the quick card. You can also use aaa to apply this, as that would imply arts first, but do note that calcs do NOT include the 10% additional NP added at the start if your chain for using an arts chain.
+</details>
+
+<details>
+  <summary><b>ocfix</b></summary>
+
+**Examples:**
+- `!calc ChenGong ocfix`
+
+**Usage:**
+Doubles np refund. This is for use with Chen Gong's NP, and only in cases where you do **not** overkill the enemy. This argument will not check whether you overkilled, it will only double the final result, so ensure you are only using this argument when you know Chen Gong will not overkill the enemy. Additionally, this argument can only be used on NPs. 
 </details>
 
 ### Special Arguments:
