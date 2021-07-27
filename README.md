@@ -513,7 +513,7 @@ Used to manually apply the arts first bonus, which is an NP generation bonus all
 - `!calc ChenGong ocfix`
 
 **Usage:**
-Doubles np refund. This is for use with Chen Gong's NP, and only in cases where you do **not** overkill the enemy. This argument will not check whether you overkilled, it will only double the final result, so ensure you are only using this argument when you know Chen Gong will not overkill the enemy. Additionally, this argument can only be used on NPs. 
+Doubles np refund. This is for use with Chen Gong's NP, and only in cases where you do **not** overkill the enemy. This argument will not check whether you overkilled, nor will it check if you are using Chen Gong, it will only double the final result, so ensure you are only using this argument when you know Chen Gong will not overkill the enemy. Additionally, this argument can only be used on NPs. 
 </details>
 
 ### Special Arguments:
