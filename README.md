@@ -518,6 +518,8 @@ Doubles np refund. This is for use with Chen Gong's NP, and only in cases where 
 
 ### Special Arguments:
 
+Note that unlike other arguments which can be in any order, **for servants who can change card type, like Space Ishtar,** you will want to make sure you change their card type BEFORE using one of the special args. Space Ishtar has an arts NP by default, so if you were to use `!calc Spishtar xss str2` it would first try to apply double skadi buffs, see that the card is not quick, and not apply the buffs, and only AFTER doing so would it switch your card to quick. Thus, you would instead want to do `!calc Spishtar str2 xss`, as in this case, it would see your card is quick and apply the buffs. For all other servants aside from ones that can change card type however, this is not an issue and the argument can be in any order just like any others.
+
 <details>
   <summary><b>xss <img src="https://assets.atlasacademy.io/GameData/JP/Servants/Commands/503900/card_servant_1.png" alt="Skadi" width="20"><img src="https://assets.atlasacademy.io/GameData/JP/Servants/Commands/503900/card_servant_1.png" alt="Skadi" width="20"></b></summary>
 
