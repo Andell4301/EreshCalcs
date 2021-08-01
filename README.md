@@ -45,6 +45,8 @@ In addition to the assumptions, Eresh will also automatically include:
 - Your servant's passives (for example, Ereshkigal has 11% arts up and 225 damage plus. The arts up won't affect her NP as it is buster, but the 225 damage plus will).
 - All of your servant's internal stats, such as their innate ATK stat, their class multiplier, etc.
   
+Note that as Append Passives need to be unlocked and leveled like skills, they are not included by default.
+  
 Finally, if the servant is available in NA, Eresh will automatically default to the highest available strengthening for the NP in NA. If the servant is not in NA yet, it will default to the highest available strengthening in JP.
   
 Note that all of these automatic inclusions / assumptions can be changed via the arguments you will see in the arguments list at the bottom of this page.
