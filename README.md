@@ -316,13 +316,15 @@ Sets a custom Noble Phantasm multiplier. This is useful for servants like Arash 
 </details>
 
 <details>
-  <summary><b>strengthen/str/lewd/interlude</b></summary>
+  <summary><b>strengthen/str/lewd/interlude/setnp/snp</b></summary>
 
 **Examples:**
 - `!calc Ereshkigal strengthen0`
 - `!calc Ereshkigal str1`
 - `!calc Ereshkigal lewd2`
 - `!calc Ereshkigal interlude1`
+- `!calc Ereshkigal setnp2`
+- `!calc Ereshkigal snp1`
 
 **Usage:**
 Specify what interlude / strengthening level you want for an NP. If you try to specify a strengthening beyond what a servant actually has, it will ignore the argument. By default, if no argument is provided, strengthening level is assumed to be:
